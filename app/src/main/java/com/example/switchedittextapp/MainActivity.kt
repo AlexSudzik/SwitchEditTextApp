@@ -29,12 +29,18 @@ class MainActivity : AppCompatActivity() {
             if(isChecked){
                 imie.setEnabled(false);
                 Iswitch.text = "off"
-                imie.setTextColor(Color.parseColor("#69cc4b"))
+                if(imie.text.toString().trim().isNotEmpty()){
+                    imie.setTextColor(Color.parseColor("#69cc4b"))
+                }else{
+                     Iswitch.setBackgroundColor(Color.parseColor("#b01e1e"))
+                }
+                //imie.setBackgroundColor(Color.parseColor("#c6ffb5"))
                 //#b01e1e
             }else{
                 imie.setEnabled(true);
                 Iswitch.text = "on"
                 imie.setTextColor(Color.parseColor("#000000"))
+                Iswitch.setBackgroundColor(Color.parseColor("#ffffff"))
             }
         })
         Nswitch?.setOnCheckedChangeListener({ _ , isChecked ->
@@ -42,10 +48,16 @@ class MainActivity : AppCompatActivity() {
                 nazwisko.setEnabled(false);
                 Nswitch.text = "off"
                 nazwisko.setTextColor(Color.parseColor("#69cc4b"))
+                if(nazwisko.text.toString().trim().isNotEmpty()){
+                    nazwisko.setTextColor(Color.parseColor("#69cc4b"))
+                }else{
+                    Nswitch.setBackgroundColor(Color.parseColor("#b01e1e"))
+                }
             }else{
                 nazwisko.setEnabled(true);
                 Nswitch.text = "on"
                 nazwisko.setTextColor(Color.parseColor("#000000"))
+                Nswitch.setBackgroundColor(Color.parseColor("#ffffff"))
             }
         })
 
@@ -54,10 +66,16 @@ class MainActivity : AppCompatActivity() {
                 mail.setEnabled(false);
                 Mswitch.text = "off"
                 mail.setTextColor(Color.parseColor("#69cc4b"))
+                if(mail.text.toString().trim().isNotEmpty()){
+                    mail.setTextColor(Color.parseColor("#69cc4b"))
+                }else{
+                   Mswitch.setBackgroundColor(Color.parseColor("#b01e1e"))
+                }
             }else{
                 mail.setEnabled(true);
                 Mswitch.text = "on"
                 mail.setTextColor(Color.parseColor("#000000"))
+                Mswitch.setBackgroundColor(Color.parseColor("#ffffff"))
             }
         })
 
@@ -66,10 +84,16 @@ class MainActivity : AppCompatActivity() {
                 wiek.setEnabled(false);
                 Wswitch.text = "off"
                 wiek.setTextColor(Color.parseColor("#69cc4b"))
+                 if(wiek.text.toString().trim().isNotEmpty()){
+                      wiek.setTextColor(Color.parseColor("#69cc4b"))
+                 }else{
+                      Wswitch.setBackgroundColor(Color.parseColor("#b01e1e"))
+                 }
             }else{
                 wiek.setEnabled(true);
                 Wswitch.text = "on"
                 wiek.setTextColor(Color.parseColor("#000000"))
+                Wswitch.setBackgroundColor(Color.parseColor("#ffffff"))
             }
         })
 
@@ -78,10 +102,16 @@ class MainActivity : AppCompatActivity() {
                 telefon.setEnabled(false);
                 Tswitch.text = "off"
                 telefon.setTextColor(Color.parseColor("#69cc4b"))
+                if(telefon.text.toString().trim().isNotEmpty()){
+                      telefon.setTextColor(Color.parseColor("#69cc4b"))
+                }else{
+                    Tswitch.setBackgroundColor(Color.parseColor("#b01e1e"))
+                }
             }else{
                 telefon.setEnabled(true);
                 Tswitch.text = "on"
-                telefon.setTextColor(Color.parseColor("#000000"))  
+                telefon.setTextColor(Color.parseColor("#000000"))
+                Tswitch.setBackgroundColor(Color.parseColor("#ffffff"))
             }
         })
 
